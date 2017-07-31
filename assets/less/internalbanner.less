@@ -1,0 +1,192 @@
+// INTERNAL STYLES //
+
+// BANNER EDITS
+#bannerwrap {
+	margin: 0;
+	.internal-container {
+    	max-width: none;
+    	width: 100%;
+		display: block;
+	}
+
+	#banner {
+		.banner.internal {
+      		display: block;
+			text-align: center;
+
+			@media screen and (min-width: 580px) {
+				text-align: left;
+			}
+
+			div.zentools {
+				z-index: 805;
+        		ul.slides {
+					li {
+			            overflow: initial;
+
+			            background: #21269d; /* Old browsers */
+			          	background: -moz-linear-gradient(left, @miltonPurple 0%, #21269d 100%); /* FF3.6-15 */
+			          	background: -webkit-linear-gradient(left, @miltonPurple 0%, #21269d 100%); /* Chrome10-25,Safari5.1-6 */
+			          	background: linear-gradient(to right, @miltonPurple 0%, #21269d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			          	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@miltonPurple', endColorstr='#21269d',GradientType=1 ); /* IE6-9 */
+						/* -- SVG Gradient FIx for IE & Other Browsers --- */
+						background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImcxNDkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CjxzdG9wIHN0b3AtY29sb3I9IiM4RjJCNTAiIG9mZnNldD0iMCIvPjxzdG9wIHN0b3AtY29sb3I9IiMyMTI2OUQiIG9mZnNldD0iMSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2cxNDkpIiAvPgo8L3N2Zz4=);
+
+			            transform: perspective(0) translate3d(0,0,0);
+
+			            .zentext {
+							position: relative;
+							width: 100%;
+							max-width: none;
+
+				            .banner-container {
+				                width: 90%;
+				                max-width: 1400px;
+				                background: transparent;
+				                margin: 0 auto;
+				                padding: 0;
+
+				                .banner-title {
+									margin-left: 0;
+									font-size: 3em;
+									line-height: 1em;
+									margin-top: 0;
+									margin-bottom: 0;
+									opacity: .1;
+									padding-top: 0em;
+									padding-bottom: .1em;
+
+					                @media screen and (min-width: 414px) {
+					                    font-size: 4em;
+					                 }// 414px
+
+					                @media screen and (min-width: 580px) {
+										font-size: 6em;
+					                }// 580px
+
+									@media screen and (min-width: 900px) {
+										font-size: 7.5em;
+									}//900px
+
+									@media screen and (min-width: 1020px) {
+										font-size: 10em;
+										line-height: 0.6625em;
+										padding-top: .5em;
+										padding-bottom: 0;
+									}// 1020px
+
+									@media screen and (min-width: 1400px) {
+										font-size: 11.5em;
+									}// 1400px
+				                }
+				            }
+    					}// .zentext - END
+    				}// li
+				}// ul.slides - END
+			}// div.zentools - END
+		}// .banner.internal - END
+
+
+		//distributor banner styles/overrides
+		.banner.internal.distributor {
+			div.zentools {
+				ul.slides {
+					li {
+						.zenimage {
+							width: 100%;
+							float: none;
+							z-index: -10;
+
+							> img {
+								min-height: 0;
+							}
+						}
+
+						.zentext {
+							display: block;
+							padding-top: 7em;
+
+							.banner-container {
+								text-align: center;
+								padding: 0 1.5em;
+								position: absolute;
+								top: 50%;
+							    transform: translateY(-50%);
+							    max-width: none;
+							    width: 100%;
+
+								.banner-title {
+									font-size: 1.5625em;
+									line-height: 1em;
+									color: #ffffff;
+									opacity: 1;
+									font-weight: 400;
+									padding: 0;
+
+									span {
+										display: block;
+										font-weight: 700;
+									}
+								}
+
+								.banner-text {
+									width: 90%;
+									max-width: 650px;
+									margin: 0 auto;
+									margin-top: .75em;
+								}
+							}
+						}
+
+						@media screen and (min-width: 414px) {
+							.zentext {
+								.banner-container {
+									.banner-title {
+										font-size: 1.6625em;
+										line-height: 1.25em;
+									}
+								}
+							}
+						}
+
+						@media screen and (min-width: 580px) {
+							.zentext {
+								padding-top: 3.5em;
+								.banner-container {
+									.banner-title {
+										font-size: 2.0625em;
+										line-height: 1.1em;
+									}
+								}
+							}
+						}
+
+						@media screen and (min-width: 1020px) {
+							.zentext {
+								padding-top: 0;
+								.banner-container {
+									// margin-top: .8em;
+									.banner-title {
+										font-size: 3.125em;
+									}
+								}
+							}
+						}// 1020px
+
+						@media screen and (min-width: 1200px) {
+							.zentext {
+								.banner-container {
+									margin-top: .8em;
+								}
+							}
+						}// 1200px
+					}// li
+				}// ul.slides
+			}// div.zentools
+		}// DISTRIBUTOR BANNER - END
+	}// #banner - END
+
+	#bannercontrols {
+		display: none;
+	}
+}// #bannerwrap - END

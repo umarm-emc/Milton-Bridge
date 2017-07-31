@@ -1,0 +1,40 @@
+
+body.search {
+  #mainwrap {
+    #main {
+      padding: 2em 0;
+
+      button.btn-primary {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        border: 0;
+        padding: .3em 3em;
+        margin: 1em 0;
+      }
+
+      @media screen and (min-width: @bp_mobileMenu) {
+        padding: 4em 0 8em;
+
+        button.btn-primary {
+          margin: 0;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        padding: 6.25em 0 12em;
+      }
+    }
+  }
+}
+
+ul.search-results {
+  padding: 0;
+  list-style: none;
+
+  .result-url {
+    font-style: italic;
+    color: @textLight;
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,1471 @@
+// Homepage milton bridge intro and product intros
+#grid1wrap {
+  .internal-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  .moduletable.milton-intro {
+    text-align: center;
+    background: url(../images/uncompressed/milton-bridge-40-years-experience.png) no-repeat transparent;
+    background-position: center;
+    background-size: 75%;
+    padding: 1em 0;
+    width: 100%;
+
+    .custom {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      color: @miltonBlue;
+      font-size: 1.5em;
+      font-weight: 400;
+
+      br {
+        display: none;
+      }
+    }
+
+    p {
+      color: @textLight;
+      margin-bottom: 20px;
+    }
+
+    .btn.grad {
+        margin-top: .85em;
+    }
+  }// .moduletable.milton-intro - END
+  .moduletable.industry {
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+
+    .custom {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    img {
+      border-radius: 5px;
+    }
+
+    .box-container {
+      position: relative;
+    }
+
+    .box {
+      border: 5px solid #ececea;
+      border-radius: 5px;
+      padding: 2em;
+      margin-top: 20px;
+      background-size: 35%;
+
+      &.pottery {
+        background: url(../images/uncompressed/milton-bridge-pottery-industry.png) no-repeat transparent center;
+        // background-size: 35%;
+      }
+      &.global {
+        background: url(../images/uncompressed/milton-bridge-global.png) no-repeat transparent center;
+        // background-size: 35%;
+      }
+
+      p {
+        color: #06128b;
+      }
+      span.bold-text {
+        display: block;
+        font-weight: 700;
+        font-size: 1.75em;
+      }
+    }
+  }// .moduletable.industry - END
+
+  // CERAMICS INTRO (HOME)
+  .moduletable.ceramics {
+    width: 100%;
+    justify-content: initial;
+    padding: 1em 0;
+
+    .custom {
+      background: url(../images/uncompressed/milton-gradient-box.jpg) no-repeat transparent;
+      background-position: top left;
+      background-size: 50%;
+    }
+
+    .product-intro {
+      position: relative;
+      width: 90%;
+      max-width: 1720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .image-container {
+      text-align: center;
+      padding-top: 2.5em;
+      position: relative;
+
+      > img {
+        width: 80%;
+      }
+    }
+
+    .ceramics-intro {
+      position: relative;
+      background: url(../images/uncompressed/milton-title-box-alt.png) no-repeat transparent;
+      background-size: 25%;
+      background-position: 25% 15%;
+      padding-top: 2em;
+
+      h3 {
+        color: @miltonBlue;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.25em;
+        // margin-bottom: .5em;
+      }
+
+      p {
+        margin-bottom: 1em;
+        color: @textLight;
+      }
+
+      .btn.grad {
+          margin-top: .85em;
+      }
+    }
+  }// .moduletable.ceramics - END
+  // JEWELLERY INTRO (HOME)
+  .moduletable.jewellery {
+    width: 100%;
+    justify-content: initial;
+    padding: 1em 0;
+
+    .custom {
+      background: url(../images/uncompressed/milton-gradient-box-reverse.jpg) no-repeat transparent;
+      background-position: top right;
+      background-size: 50%;
+    }
+
+    .product-intro {
+      position: relative;
+      width: 90%;
+      max-width: 1720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .image-container {
+      text-align: center;
+      padding-top: 2.5em;
+      position: relative;
+
+      > img {
+        width: 80%;
+      }
+    }
+
+    .jewellery-intro {
+      position: relative;
+      background: url(../images/uncompressed/milton-title-box-alt.png) no-repeat transparent;
+      background-size: 25%;
+      background-position: 25% 13%;
+      padding-top: 2em;
+
+      h3 {
+        color: @miltonBlue;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.25em;
+        // margin-bottom: .5em;
+      }
+
+      p {
+        margin-bottom: 1em;
+        color: @textLight;
+      }
+
+      .btn.grad {
+          margin-top: .85em;
+      }
+    }
+  }// .moduletable.jewellery - END
+
+  /* ------ MEDIA QUERIES START ------ */
+  @media screen and (min-width: 414px) {
+    .moduletable.milton-intro {
+      padding: 2.5em 0;
+      background-size: 50%;
+    }
+    .moduletable.industry {
+      .custom {
+        width: 100%;
+      }
+      .box-container {
+        html.svg & {
+          display: flex;
+        }
+        margin-top: 1em;
+      }
+
+      .box {
+        width: 48%;
+        min-height: 200px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        &.pottery {
+          margin-right: 4%;
+        }
+
+        p {
+          position: absolute;
+          width: 100%;
+          padding: 0 1em;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          margin-bottom: 0;
+        }
+      }
+    }
+    .moduletable.ceramics {
+      .custom {
+        background-size: 45%;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .ceramics-intro {
+        background-position: 30% 15%;
+        background-size: 22.5%;
+      }
+    }
+    .moduletable.jewellery {
+      .custom {
+        background-size: 45%;
+        display: inline-block;
+        width: 100%;
+      }
+
+      .jewellery-intro {
+        background-position: 30% 13%;
+        background-size: 22.5%;
+      }
+    }
+  }// 414px
+  @media screen and (min-width: 580px) {
+    .moduletable.milton-intro {
+      background-position: left 20%;
+      background-size: 30%;
+      text-align: left;
+
+      .custom {
+        width: 26.5em;
+      }
+    }
+    .moduletable.industry {
+      .box-container {
+        width: 80%;
+        margin: 1em auto 0;
+      }
+    }
+    .moduletable.ceramics {
+      .custom {
+        background-size: 40%;
+      }
+
+      .product-intro {
+        text-align: left;
+      }
+
+      .ceramics-intro {
+        background-position: left 15%;
+        background-size: 17.5%;
+        padding-left: 3.3em;
+      }
+    }
+    .moduletable.jewellery {
+      .custom {
+        background-size: 40%;
+      }
+
+      .product-intro {
+        text-align: left;
+      }
+
+      .jewellery-intro {
+        background-position: left 15%;
+        background-size: 17.5%;
+        padding-left: 3.3em;
+      }
+    }
+  }// 580px
+  @media screen and (min-width: @bp_mobileMenu) {
+    #grid1 {
+      width: 48%;
+      margin-right: 2%;
+      display: inline-block;
+
+      .moduletable.milton-intro {
+        background-position: 0 10%;
+        background-size: 70%;
+        .custom {
+          margin-left: 4em;
+          width: 85%;
+          padding-right: 2em;
+        }
+
+        h3 {
+          font-size: 2em;
+        }
+      }
+    }
+    #grid2 {
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+      .moduletable.industry {
+        padding-bottom: 0;
+
+        .box-container {
+          width: 100%;
+        }
+
+        .box {
+          background-size: 50%;
+          // &.pottery, &.global {
+          //   background-size: 50%;
+          // }
+        }
+      }
+    }
+    #grid3 {
+      position: relative;
+      .moduletable.ceramics {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        .custom {
+          background-size: 25%;
+        }
+        .image-container {
+          width: 48%;
+          float: left;
+          max-width: 835px;
+          text-align: left;
+          > img {
+            width: 100%;
+          }
+        }
+
+        .ceramics-intro {
+          width: 50%;
+          float: left;
+          clear: none;
+          max-width: 785px;
+          padding-left: 3em;
+          background-position: 2.5% 15%;
+          background-size: 25%;
+          position: relative;
+          left: 2.5%;
+        }
+      }
+    }// #grid3
+    #grid4 {
+      position: relative;
+
+      .moduletable.jewellery {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        .custom {
+          background-size: 25%;
+        }
+        .image-container {
+          width: 48%;
+          float: right;
+          max-width: 835px;
+          text-align: right;
+          > img {
+            width: 100%;
+          }
+        }
+
+        .jewellery-intro {
+          width: 50%;
+          float: left;
+          clear: none;
+          max-width: 785px;
+          padding-left: 1.8em;
+          padding-right: 1em;
+          background-position: 2.5% 12%;
+          background-size: 25%;
+          position: relative;
+          // left: 2.5%;
+        }
+      }
+    }// #grid4
+  }// 730px - bp_mobileMenu
+  @media screen and (min-width: 900px) {
+    padding-top: 50px;
+    #grid1 {
+      .moduletable.milton-intro {
+        background-position: 0 0%;
+        background-size: 45%;
+        padding: 0;
+
+        h3 {
+          margin-top: 0;
+        }
+      }
+    }
+    #grid2 {
+      .moduletable.industry {
+        position: relative;
+        padding: 0;
+        right: -1%;
+
+        .image-container {
+          position: relative;
+          overflow: hidden;
+          max-height: 300px;
+          border-radius: 5px;
+
+          img {
+            width: 50%;
+            // margin-top: 0;
+          }
+        }
+
+        .box {
+          width: 50.4%;
+          &.pottery {
+            margin-right: 1em;
+          }
+        }
+      }
+    }
+    #grid3 {
+      .moduletable.ceramics {
+        .ceramics-intro {
+          padding-left: 5em;
+          padding-top: 3.5em;
+          background-position: 5% 15%;
+          background-size: 30%;
+
+          h3 {
+            margin-bottom: 1.75em;
+          }
+        }
+      }
+    }
+    #grid4 {
+      .moduletable.jewellery {
+        .jewellery-intro {
+          padding-left: 5em;
+          padding-right: 1.5em;
+          padding-top: 3.5em;
+          background-position: 5% 12%;
+          background-size: 30%;
+
+          h3 {
+            margin-bottom: 1.75em;
+          }
+        }
+      }
+    }
+  }// 900px
+  @media screen and (min-width: 1020px) {
+    #grid2 {
+      .moduletable.industry {
+        .box {
+          // width: 45.4%;
+        }
+      }
+    }
+    #grid3 {
+      .moduletable.ceramics {
+        .ceramics-intro {
+          padding-top: 7.5em;
+          background-position: 5% 30%;
+
+          h3 {
+            margin-bottom: 2em;
+          }
+        }
+      }
+    }
+    #grid4 {
+      .moduletable.jewellery {
+        .jewellery-intro {
+          padding-top: 7.5em;
+          background-position: 5% 27%;
+
+          h3 {
+            margin-bottom: 2em;
+          }
+        }
+      }
+    }
+  }// 1020px
+  @media screen and (min-width: 1200px) {
+    #grid1 {
+      .moduletable.milton-intro {
+        background-size: 35%;
+        h3 {
+          br {
+            display: initial;
+          }
+        }
+      }
+    }
+    #grid2 {
+      .moduletable.industry {
+        right: -1.5%;
+        .image-container {
+          max-height: 350px;
+        }
+      }
+    }
+    #grid3 {
+      .moduletable.ceramics {
+        .ceramics-intro {
+          padding-left: 5em;
+          padding-top: 7.5em;
+          background-position: 10% 30%;
+          background-size: 25%;
+          width: 52%;
+        }
+      }
+    }
+    #grid4 {
+      .moduletable.jewellery {
+        .jewellery-intro {
+          padding-left: 5em;
+          padding-top: 7.5em;
+          background-position: 10% 30%;
+          background-size: 25%;
+          width: 52%;
+        }
+      }
+    }
+  }// 1200px
+  @media screen and (min-width: 1400px) {
+    #grid1 {
+      width: 46%;
+      margin-right: 0;
+
+      .moduletable.milton-intro {
+        .custom {
+          margin-left: 6.5em;
+          margin-right: 2em;
+          padding-right: 4em;
+        }
+
+        h3 {
+          font-size: 2.5em;
+          padding-top: 1em;
+        }
+
+        p {
+          font-size: 1.15em;
+        }
+        .btn.grad {
+            margin-top: 1.3em;
+        }
+      }
+    }
+    #grid2 {
+      width: 50%;
+      .moduletable.industry {
+        right: -7.5%;
+        .custom {
+          display: flex;
+          margin: 0;
+        }
+        .image-container {
+          width: 49%;
+          float: left;
+          margin-right: 1%;
+          max-height: none;
+          max-width: 505px;
+          overflow: visible;
+          img {
+            width: 100%;
+            height: 100%;
+            // margin-top: 0;
+          }
+        }
+        .box-container {
+          vertical-align: top;
+          width: 50%;
+          display: inline-block;
+          margin: 0;
+          .box {
+            background-size: 40%;
+            width: 100%;
+            padding: 7.45em 0;
+            p {
+              font-size: 1.5em;
+              line-height: 1.7em;
+
+              span.bold-text {
+                font-size: 1.8em;
+              }
+            }
+            &.global {
+              margin-top: .5em;
+            }
+          }
+        }// .box-container
+      }
+    }
+    #grid3 {
+      .moduletable.ceramics {
+        .image-container {
+          padding-top: 5em;
+        }
+
+        .ceramics-intro {
+          padding-left: 7em;
+          background-position: 10% 30%;
+          background-size: 27.5%;
+
+          h3 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+          }
+
+          p {
+            font-size: 1.25em;
+          }
+
+          .btn.grad {
+              margin-top: 1.35em;
+          }
+        }
+      }
+    }
+    #grid4 {
+      margin-top: -4em;
+      .moduletable.jewellery {
+        .image-container {
+          padding-top: 5em;
+        }
+
+        .jewellery-intro {
+          padding-left: 2em;
+          padding-right: 3em;
+          padding-top: 10em;
+          background-position: 0 30%;
+          background-size: 27.5%;
+
+          h3 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+          }
+
+          p {
+            font-size: 1.25em;
+          }
+
+          .btn.grad {
+              margin-top: 1.35em;
+          }
+        }
+      }
+    }
+  }// 1400px
+  @media screen and (min-width: 1500px) {
+    #grid1 {
+      .moduletable.milton-intro {
+        .custom {
+          margin-left: 10.5em;
+        }
+        h3 {
+          font-size: 3em;
+          line-height: 1.175em
+        }
+      }
+    }
+  }// 1500px
+  @media screen and (min-width: 1800px) {
+    #grid1 {
+      .moduletable.milton-intro {
+        .custom {
+          margin-left: 13em;
+          padding-right: 7em;
+          padding-top: 2.5em;
+        }
+
+        h3 {
+            padding-top: .5em;
+        }
+      }
+    }
+    #grid3 {
+      .moduletable.ceramics {
+        .custom {
+          background-size: 25%;
+        }
+        .image-container {
+          width: auto;
+        }
+
+        .ceramics-intro {
+          padding-left: 4.5em;
+          padding-top: 16.5em;
+          background-position: 0% 45%;
+          // background-size: 30%;
+          width: 42.5%;
+          position: relative;
+          left: 5%;
+
+          h3 {
+            margin-bottom: 2.5em;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    #grid4 {
+      margin-top: -9em;
+      .moduletable.jewellery {
+        .custom {
+          background-size: 25%;
+          width: 100%;
+        }
+        .image-container {
+          width: auto;
+          padding-top: 5em;
+        }
+
+        .jewellery-intro {
+          padding-left: 4.5em;
+          padding-top: 18em;
+          background-position: 0% 44%;
+          // background-size: 30%;
+          width: 42.5%;
+          position: relative;
+          left: 2.5%;
+
+          h3 {
+            margin-bottom: 2.5em;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }// 1800px
+  /* ------ MEDIA QUERIES END ------ */
+}// #grid1wrap - END
+
+#grid2wrap {
+  .internal-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+  }
+  // GLASS INTRO (HOME)
+  .moduletable.glass {
+    width: 100%;
+    justify-content: initial;
+    padding: 1em 0;
+
+    .custom {
+      background: url(../images/uncompressed/milton-gradient-box.jpg) no-repeat transparent;
+      background-position: top left;
+      background-size: 50%;
+    }
+
+    .product-intro {
+      position: relative;
+      width: 90%;
+      max-width: 1720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .image-container {
+      text-align: center;
+      padding-top: 2.5em;
+      position: relative;
+
+      > img {
+        width: 80%;
+      }
+    }
+
+    .glass-intro {
+      position: relative;
+      background: url(../images/uncompressed/milton-title-box-alt.png) no-repeat transparent;
+      background-size: 25%;
+      background-position: 25% 15%;
+      padding-top: 2em;
+
+      h3 {
+        color: @miltonBlue;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.25em;
+        // margin-bottom: .5em;
+      }
+
+      p {
+        margin-bottom: 1em;
+        color: @textLight;
+      }
+
+      .btn.grad {
+          margin-top: .85em;
+      }
+    }
+  }// .moduletable.glass - END
+
+  //OUR SPECILAIST SERVICES (HOME CAROUSEL)
+  .moduletable.services {
+    // display: inline-grid;
+    position: relative;
+    background-color: #dededa;
+    background-image: url(../images/uncompressed/white-box-left.png), url(../images/uncompressed/white-box-top.png), url(../images/uncompressed/white-box-right.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 30%, 30%, 30%;
+    background-position: left bottom, top center, right center;
+
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0 4.5em;
+
+
+    .custom {
+      width: 90%;
+      max-width: 1720px;
+      margin: 0 auto;
+    }
+
+    .services-container {
+      position: relative;
+      .title {
+        background: url(../images/uncompressed/milton-title-box-grey.png) no-repeat transparent;
+        background-size: 25%;
+        background-position: 25% 65%;
+        padding-top: 5em;
+
+        h3 {
+          margin-top: 0;
+          font-weight: 400;
+          font-size: 2em;
+          line-height: 1.45em;
+          color: @btnCol;
+        }
+      }
+
+      .intro-text {
+        p {
+          margin-bottom: 3em;
+          color: @textLight;
+        }
+      }
+    }// .services-container
+
+    #service-tiles {
+      position: relative;
+      width: 100%;
+      padding: 3em 0;
+      list-style: none;
+      margin: 0;
+
+      .tile-item {
+        position: relative;
+        margin-bottom: 2em;
+        width: 100%;
+        max-width: 544px;
+        cursor: pointer;
+        .overlay {
+          transition: all .3s ease-in-out;
+          background: rgba(37, 38, 154, 0.4);
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+
+          .item {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            height: auto;
+            padding: 1em .75em 1em;
+          }
+        }
+
+        &:hover {
+          .overlay {
+            background: rgba(0, 1, 146, 0.4);
+          }
+        }
+      }// .tile-item
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: .15em;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: 1.45em;
+        color: @btnCol;
+      }
+
+      p {
+        color: #ffffff;
+        // margin-bottom: .5em;
+      }
+    } //#service-tiles - END
+  }// .moduletable.services - END
+
+  .moduletable.services.alternate {
+    background-image: url(../images/uncompressed/white-box-left.png), url(../images/uncompressed/white-box-right.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%, 30%;
+    background-position: left bottom, right center;
+    .services-container {
+      display: block;
+
+      .title {
+        background-position: 25% 35%;
+        padding-top: 2em;
+
+        h3 {
+          margin-bottom: .5em;
+        }
+      }
+    }
+
+    #service-tiles {
+      padding: 1.75em 0;
+    }
+  }
+
+  /* ------ MEDIA QUERIES START ------ */
+  @media screen and (min-width: 335px) {
+    .moduletable.services {
+      .services-container {
+        .title {
+          background-position: 25% 60%;
+          padding-top: 4em;
+          padding-bottom: 2em;
+        }
+      }
+    }
+  }// 335px
+  @media screen and (min-width: 414px) {
+    .moduletable.glass {
+      .custom {
+        background-size: 45%;
+        width: 100%;
+        display: inline-block;
+      }
+
+      .glass-intro {
+        background-position: 30% 15%;
+        background-size: 22.5%;
+      }
+    }
+    .moduletable.services {
+      .services-container {
+        .title {
+          background-position: 30% 70%;
+          background-size: 22.5%;
+          padding-top: 7em;
+        }
+      }
+
+      #service-tiles {
+        .tile-item {
+          .overlay {
+            .item {
+              padding: 2em 1em 3em;
+            }
+          }
+        }
+
+        h4 {
+          margin-bottom: .75em;
+        }
+
+        p {
+          margin-bottom: .75em;
+        }
+      }
+    }
+  }// 414px
+  @media screen and (min-width: 580px) {
+    .moduletable.glass {
+      .custom {
+        background-size: 40%;
+      }
+
+      .product-intro {
+        text-align: left;
+      }
+
+      .glass-intro {
+        background-position: left 15%;
+        background-size: 17.5%;
+        padding-left: 3.3em;
+      }
+    }
+
+    .moduletable.services {
+      text-align: left;
+
+      .services-container {
+        .title {
+          background-position: left 67.5%;
+          background-size: 17.5%;
+          padding-left: 3.3em;
+        }
+      }
+
+      #service-tiles {
+        .tile-item {
+          .overlay {
+            .item {
+              padding: 2em 3em 4em;
+            }
+          }
+        }
+      }
+    }
+  }// 580px
+  @media screen and (min-width: @bp_mobileMenu) {
+    #grid5 {
+      position: relative;
+      z-index: 50;
+      .moduletable.glass {
+        padding: 0;
+        display: inline-block;
+        width: 100%;
+        .custom {
+          background-size: 25%;
+        }
+        .image-container {
+          width: 48%;
+          float: left;
+          max-width: 835px;
+          text-align: left;
+          > img {
+            width: 100%;
+          }
+        }
+
+        .glass-intro {
+          width: 50%;
+          float: left;
+          clear: none;
+          max-width: 785px;
+          padding-left: 3em;
+          background-position: 2.5% 15%;
+          background-size: 25%;
+          position: relative;
+          left: 2.5%;
+        }
+      }
+    }// #grid5
+
+    #grid8 {
+      width: 100%;
+      // display: inline-grid;
+      .moduletable.services {
+        .services-container {
+          .title {
+            padding-top: 8em;
+            background-position: left 75%;
+          }
+        }
+
+        #service-tiles {
+          .tile-item {
+            // width: 47%;
+            // float: left;
+            // margin-right: 2em;
+
+            // &:nth-child(even) {
+            //   margin-right: 0;
+            // }
+
+            .overlay {
+              .item {
+                padding: 1.5em 2.5em 1.5em;
+              }
+            }
+          }
+        }
+      }
+
+      .moduletable.services.alternate {
+        .services-container {
+          .title {
+            padding-top: 4em;
+          }
+        }
+      }
+    }
+  }// 730px - @bp_mobileMenu
+  @media screen and (min-width: 900px) {
+    #grid5 {
+      .moduletable.glass {
+        .glass-intro {
+          padding-left: 5em;
+          padding-top: 3.5em;
+          background-position: 5% 15%;
+          background-size: 30%;
+
+          h3 {
+            margin-bottom: 1.75em;
+          }
+        }
+      }
+    }// #grid5
+
+    #grid8 {
+      .moduletable.services {
+        background-size: 15%,15%,15%;
+        margin-top: -6em;
+
+        .services-container {
+          .title {
+            width: 48%;
+            margin-right: 2%;
+            max-width: 420px;
+            display: inline-block;
+            // float: left;
+            // vertical-align: middle;
+            padding-top: 10em;
+            padding-left: 5em;
+            background-position: 5% 85%;
+            background-size: 30%;
+          }
+
+          .intro-text {
+            width: 48%;
+            display: inline-block;
+            vertical-align: middle;
+            // float: right;
+            // padding-top: 6.5em;
+            p {
+              margin-bottom: 1.75em;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+
+        #service-tiles {
+          .tile-item {
+            // width: 48%;
+            // float: left;
+            // margin-right: 2%;
+            //
+            // &:nth-child(even) {
+            //   margin-right: 0;
+            // }
+
+            .overlay {
+              .item {
+                padding: 2em 2.5em 2em;
+              }
+            }
+          }
+
+          // .tile-item.frit {
+          //   clear: left;
+          // }
+        }
+      }
+
+      .moduletable.services.alternate {
+        background-size: 15%, 15%;
+        margin-top: 0;
+
+        .services-container {
+          .title {
+            width: 60%;
+          }
+        }
+      }
+    }
+  }// 900px
+  @media screen and (min-width: 1020px) {
+    #grid5 {
+      .moduletable.glass {
+        .glass-intro {
+          padding-top: 7.5em;
+          background-position: 5% 30%;
+
+          h3 {
+            margin-bottom: 2em;
+          }
+        }
+      }
+    }
+
+    #grid8 {
+      .moduletable.services {
+        // background-size: 20%,20%,20%;
+
+        .services-container {
+          .title {
+            width: 48%;
+            padding-top: 11em;
+            background-position: 5% 90%;
+            margin-right: 2em;
+          }
+        }
+
+        #service-tiles {
+          .tile-item {
+            // width: 31%;
+            // max-width: 544px;
+            // float: left;
+            // margin-right: 3%;
+            //
+            // &:nth-child(even) {
+            //   margin-right: 3%;
+            // }
+            //
+            // &:last-child {
+            //   margin-right: 0;
+            // }
+
+            .overlay {
+              .item {
+                padding: 1em 1.5em 1.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }// 1020px
+  @media screen and (min-width: 1200px) {
+    #grid5 {
+      .moduletable.glass {
+        .glass-intro {
+          padding-left: 5em;
+          padding-top: 7.5em;
+          background-position: 10% 30%;
+          background-size: 25%;
+          width: 52%;
+        }
+      }
+    }
+
+    #grid8 {
+      .moduletable.services {
+
+        .services-container {
+          display: block;
+          display: flex;
+          justify-content: space-between;
+
+          .intro-text {
+            padding-top: 9em;
+            width: 42.25%;
+
+            p {
+              margin-bottom: 3em;
+            }
+          }
+        }
+
+        #service-tiles {
+          .tile-item {
+            .overlay {
+              .item {
+                padding: 2em 2em 3em;
+              }
+            }
+          }
+        }// #service-tiles - END
+      }
+    }
+  }// 1200px
+  @media screen and (min-width: 1400px) {
+    #grid5 {
+      margin-top: -4em;
+      .moduletable.glass {
+        .image-container {
+          padding-top: 5em;
+        }
+
+        .glass-intro {
+          padding-left: 7em;
+          padding-top: 10em;
+          background-position: 10% 35%;
+          background-size: 27.5%;
+
+          h3 {
+            font-size: 3em;
+            margin-bottom: 1.5em;
+          }
+
+          p {
+            font-size: 1.25em;
+          }
+        }
+      }
+    }
+
+    #grid8 {
+      .moduletable.services {
+        background-position: left bottom,42.5% 0,right center;
+        padding: 1em 0 0;
+        .services-container {
+          .title {
+            max-width: none;
+            background-size: 27.5%;
+            background-position: left 80%;
+            padding-left: 2em;
+
+            h3 {
+              font-size: 3em;
+              margin-bottom: 1.5em;
+            }
+          }
+
+          .intro-text {
+            max-width: 700px;
+            padding-top: 11em;
+            width: 41%;
+            p {
+              font-size: 1.25em;
+              margin-bottom: 3.5em;
+            }
+          }
+        }
+
+        #service-tiles {
+          padding: 5em 0 6em;
+          .tile-item {
+            // width: 32%;
+            // margin-right: 2%;
+            //
+            // &:nth-child(even) {
+            //   margin-right: 2%;
+            // }
+
+            .overlay {
+              .item {
+                padding: 2em 2.5em 3em;
+              }
+            }
+          }
+          h4 {
+            font-size: 2.75em;
+            margin-bottom: .65em;
+          }
+
+          p {
+            font-size: 1.15em;
+          }
+        }
+
+      }
+
+      .moduletable.services.alternate {
+        background-position: left bottom, right 30%;
+        padding: 0;
+
+        .services-container {
+          .title {
+            padding-top: 8em;
+          }
+        }
+
+        #service-tiles {
+          padding: 3em 0;
+        }
+      }
+    }
+  }// 1400px
+  @media screen and (min-width: 1800px) {
+    #grid5 {
+      margin-top: -9em;
+      .moduletable.glass {
+        .custom {
+          background-size: 25%;
+        }
+        .image-container {
+          width: auto;
+        }
+
+        .glass-intro {
+          padding-left: 4.5em;
+          padding-top: 20em;
+          background-position: 0% 53%;
+          // background-size: 30%;
+          width: 42.5%;
+          position: relative;
+          left: 5%;
+
+          h3 {
+            margin-bottom: 2.25em;
+            margin-top: 0;
+          }
+
+          .btn.grad {
+              margin-top: 1.35em;
+          }
+        }
+      }
+    }
+
+    #grid8 {
+      .moduletable.services {
+        background-position: left bottom,42.5% 0,right 40%;
+        .services-container {
+          .title {
+            padding-top: 14em;
+            padding-left: 8.2em;
+            background-position: 7% 85%;
+            background-size: 24%;
+          }
+
+          .intro-text {
+            padding-top: 11.5em;
+            width: 40%;
+            margin-right: 3em;
+          }
+        }
+
+        #service-tiles {
+          .tile-item {
+            .overlay {
+              .item {
+                padding: 2em 3.75em 4em;
+              }
+            }
+          }
+        }
+      }
+
+      .moduletable.services.alternate {
+        .services-container {
+          .title {
+            padding-top: 10em;
+            padding-left: 11em;
+            padding-bottom: 2em;
+            background-position: 7% 90%;
+          }
+        }
+      }
+    }
+  }// 1800px
+  /* ------ MEDIA QUERIES END ------ */
+
+}// #grid2wrap - END

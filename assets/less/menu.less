@@ -1,0 +1,272 @@
+#menu {
+    ul.nav.menu {
+        li {
+            position: relative;
+            > ul {
+                display: none;
+                width: 235px;
+                height: auto;
+                padding: 0;
+                position: absolute;
+                background: #333;
+
+                > li {
+                    position: relative;
+                    display: block;
+                    color: #fff;
+                    transition: all .3s ease-in-out;
+
+                    a {
+                        padding: 0;
+                        color: #92918d;
+                        padding: 10px;
+                        display: inline-block;
+                        width: 100%;
+                    }// a
+                } // li - SECOND LEVEL
+            }// > ul - SECOND LEVEL
+        }// li - Top level
+
+        li.deeper.parent > a:after {
+            content: "\f078";
+            display: inline;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            color: #22269c;
+            margin-left: 5px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    }// ul.nav.menu
+
+    @media screen and (min-width: @bp_mobileMenu) {
+        overflow: visible;
+        width: auto;
+        float: left;
+        clear: none;
+        z-index: 810;
+        margin-top: 20px;
+        ul.nav.menu {
+            li {
+                a {
+                    &:hover {
+                        color: @linkCol;
+                    }
+                }
+                > ul {
+                    display: block;
+                    width: 210px;
+                    background: #ececea;
+                    color: #92918d;
+                    top: -20em;
+                    opacity: 0;
+                    height: 0;
+                    transition: opacity .3s linear;
+                    box-shadow: 3px 3px 13px rgba(105,103,104,.5);
+                    > li {
+                        a {
+                            padding: 2% 5% 2% 14.28%;
+                        }
+
+                        > ul {
+                            display: block;
+                            opacity: 0;
+                        }
+
+                        &:hover {
+                            box-shadow: 0 0 13px rgba(212, 210, 211, 0.7);
+
+                            > a {
+                                font-weight: 700;
+                                &:hover {
+                                    color: #92918d;
+                                }
+                            }
+                        }
+                    }// Second level - > li
+
+                    > li.parent {
+                        position: initial;
+                        color: #92918d;
+                        a {
+                            position: initial;
+                            transition: all .3s ease-in-out;
+                            &:after {
+                                content: "\f054";
+                                visibility: hidden;
+                                font-family: @fontAwesome;
+                                position: absolute;
+                                right: 20px;
+                                color: #92918d;
+                                transition: all .3s ease-in-out;
+                            }
+                            &:hover {
+                                &:after {
+                                    color: #494b90;
+                                }
+                            }
+                        }
+                        > ul {
+                            display: block;
+                            opacity: 0;
+                            height: 0;
+                            position: absolute;
+                            color: #fff;
+                            transition: opacity .3s linear;
+                            right: 0;
+                            left: 100%;
+                            top: -20em;
+                            width: 300px;
+                            background: #d4d2d3;
+                            box-shadow: 3px 3px 13px rgba(105,103,104,.5);
+                            padding: 0;
+
+                            > li {
+                                color: #fff;
+                                position: initial;
+                                padding-left: 9%;
+
+                                a {
+                                    padding: 0;
+                                    color: #fff;
+                                    font-size: 1.45em;
+                                    padding-top: 0;
+                                    height: 45px;
+                                    position: initial;
+                                    display: block;
+
+                                    span {
+                                        color: #fff;
+                                        padding: 0;
+                                    }
+
+                                    > img {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                    }
+
+                                    &:hover {
+                                        font-weight: normal;
+                                    }
+
+                                    &:after {
+                                        content: "\f061";
+                                        visibility: visible !important;
+                                        top: 20px;
+                                    }
+                                }
+
+                                p {
+                                    display: block;
+                                    width: 60%;
+                                    white-space: normal;
+                                }
+                            }// li - Alias Menu Link - Image and Description
+                        }// Third Level - > ul child
+
+                        &:hover {
+                            > ul {
+                                height: auto;
+                                opacity: 1;
+                                padding: 20px 0;
+                                z-index: 20002;
+                                right: -100%;
+                                top: 0;
+                                min-height: 190px;
+                            }
+                        }// Second Level - > li.parent HOVER
+                    }// Second Level - > li.parent
+                }// Second Level - > ul
+
+                &:hover {
+                    > ul {
+                        height: auto;
+                        opacity: 1;
+                        padding: 17.5px 0;
+                        z-index: 20001;
+                        top: 2em;
+                    }
+                }// li - HOVER
+            }// li
+        }// ul.nav.menu
+    }// @bp_mobileMenu - 731px
+
+    @media screen and (min-width: 1020px) {
+        margin-left: 2em;
+        margin-top: 25px;
+        ul.nav.menu {
+            li {
+                &:hover {
+                    > ul {
+                        top: 2.8em;
+                    }
+                }
+            }
+        }
+    }// 1020px
+
+    @media screen and (min-width: 1100px) {
+        margin-left: 4em;
+    }// 1100px
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        margin-top: 30px;
+
+        ul.nav.menu {
+            li {
+                > ul {
+                    > li.parent {
+                        > ul {
+                            > li {
+                                a {
+                                    height: 55px;
+                                    &:after {
+                                        top: 22.5px;
+                                    }
+                                }
+                            }// > li - THIRD LEVEL
+                        }// > ul - THIRD LEVEL
+                    }
+                }// > ul - SECOND LEVEL
+            }
+        }// ul.nav.menu - TOP LEVEL
+    }// 1200px
+
+    @media screen and (min-width: 1400px) {
+        ul.nav.menu {
+            li {
+                > ul {
+                    > li.parent {
+                        > ul {
+                            > li {
+                                a {
+                                    &:after {
+                                        top: 23px;
+                                    }
+                                }
+
+                                p {
+                                    font-size: 1.15em;
+                                }
+                            }
+                        }// > ul - THIRD LEVEL
+                    }
+                }// > ul - SECOND LEVEL
+            }
+        }// ul.nav.menu - TOP LEVEL
+    }// 1400px
+    @media screen and (min-width: 1500px) {
+        ul.nav.menu {
+            li {
+                &:hover {
+                    > ul {
+                        top: 4.2em;
+                    }
+                }
+            }
+        }
+    }// 1500px
+} // Menu

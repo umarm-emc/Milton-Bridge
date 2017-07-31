@@ -1,0 +1,573 @@
+// DISTRIBUTOR PAGE BUILD
+
+body.distributor {
+    #abovewrap {
+        background: #ececea;
+        color: #000000;
+
+        .internal-container {
+            max-width: 1520px
+        }
+
+        // LETTER NAVIGATION
+        .distributor-nav {
+            clear: left;
+            display: block;
+            overflow: auto;
+            padding: .75em 0;
+            text-align: left;
+            ul {
+                list-style: none;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                width: 420%;
+                left: 0;
+
+                li {
+                    // float: left;
+                    display: inline;
+                    margin: 0 .25em;
+
+                    // &:first-child {
+                    //   margin-left: 0;
+                    // }// large desktop
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    span {
+                        border-radius: 5px;
+                        color: #bfbdbe;
+                        padding: .4em .75em;
+                        font-weight: 700;
+                    }
+
+                    a.letter-btn {
+                        border-radius: 5px;
+                        color: #000000;
+                        padding: .4em .75em;
+
+                        &:hover {
+                          background: @miltonPurple;
+                          color: #ffffff;
+                        }
+                    }
+                }// li
+
+                li.active {
+                    a.letter-btn {
+                        color: #ffffff;
+                        background: @miltonBlue;
+                    }
+                }
+            }// ul
+
+            @media screen and (min-width: 375px) {
+                ul {
+                    width: 360%;
+                }
+            }// 375px
+
+            @media screen and (min-width: 414px) {
+                ul {
+                    width: 330%;
+                }
+            }// 414px
+
+            @media screen and (min-width: 450px) {
+                ul {
+                    width: 300%;
+                }
+            }// 450px
+
+            @media screen and (min-width: 500px) {
+                ul {
+                    width: 265%;
+                }
+            }// 500px
+
+            @media screen and (min-width: 550px) {
+                ul {
+                    width: 245%;
+                }
+            }// 550px
+
+            @media screen and (min-width: 600px) {
+                ul {
+                    width: 220%;
+                }
+            }// 600px
+
+            @media screen and (min-width: 650px) {
+                ul {
+                    width: 205%;
+                }
+            }// 650px
+
+            @media screen and (min-width: @bp_mobileMenu) {
+                overflow: initial;
+                padding: 0;
+                text-align: center;
+                ul {
+                    width: auto;
+                    left: initial;
+                    display: inline-block;
+                    padding-top: 1em;
+
+                    li {
+                        display: block;
+                        float: left;
+                        margin-bottom: .75em;
+                        // a.letter-btn {
+                        //   margin-bottom: .5em;
+                        // }
+                    }
+                }
+            }// 730px
+
+            @media screen and (min-width: 1200px) {
+                padding: 2em 0;
+                ul {
+                    padding-top: 0;
+                    li {
+                        margin-bottom: 0;
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+                    }
+                }// ul
+            }//1200px
+
+            @media screen and (min-width: 1400px) {
+                padding: 3.125em 0 2.75em;
+                ul {
+                    li {
+                        a.letter-btn {
+                            font-size: 1.2em;
+                        }
+
+                        span {
+                            font-size: 1.2em;
+                        }
+                    }
+                }// ul
+            }//1400px
+
+            @media screen and (min-width: 1620px) {
+                ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    li {
+                        margin: 0;
+                        a.letter-btn {
+                            font-size: 1.875em;
+                            padding: .25em .5em;
+                        }
+
+                        span {
+                            font-size: 1.875em;
+                            padding: .25em .5em;
+                        }
+                    }
+                }// ul
+            }//1620px
+        }// .distributor-nav
+
+        @media screen and (min-width: 580px) {
+            #above {
+                padding: 25px 0;
+            }
+        }
+
+        @media screen and (min-width: @bp_mobileMenu) {
+            #above {
+                padding: 0;
+            }
+        }
+    }// #abovewrap
+
+  #mainwrap {
+    background: transparent;
+
+    .internal-container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1500px;
+
+    }// internal-container - END
+
+    #main {
+      padding: 0;
+      width: 100%;
+      float: none;
+      max-width: none;
+      background: transparent;
+      border: 0;
+
+      #maininner {
+        width: 100%;
+        max-width: none;
+        float: none;
+      }
+
+      .custom {
+        padding: 0;
+        background: transparent;
+      }
+
+      .item-page {
+        padding: 0;
+
+        .page-header {
+          display: none;
+        }
+
+        p.hide {
+          height: 0;
+          margin: 0;
+        }
+
+        .fields-container {
+          position: relative;
+          clear: left;
+          margin-top: 2em;
+        }
+
+        .field-entry {
+            margin-left: 0;
+            opacity: 1;
+            transition: all .3s ease-in-out;
+            visibility: visible;
+        }
+
+        .field-entry.hidden {
+          opacity: 0;
+          transition: all .3s ease-in-out;
+          height: 0;
+          visibility: hidden;
+        }
+
+        .field-value {
+          position: relative;
+
+          h3 {
+            line-height: .8em;
+            padding: 1.405em 1.565em;
+            display: block;
+            max-width: 90px;
+            color: #333;
+            background: #ececea;
+            border-radius: 5px;
+            font-weight: 700;
+            margin: 0 auto;
+            margin-bottom: 1em;
+          }
+          ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            display: inline-block;
+            font-size: 1em;
+            li {
+              margin-bottom: 3.5em;
+              h4 {
+                margin: 0;
+                font-weight: 700;
+                font-size: 1.2em;
+                color: #333;
+                span {
+                  display: block;
+                  color: #2c338c;
+                  margin: .5em 0;
+                }
+                &:before {
+                  content: '';
+                  width: 22px;
+                  height: 21px;
+                  display: inline-block;
+                  margin-right: 8px;
+                  background-repeat: no-repeat;
+                  vertical-align: middle;
+                  margin-top: -5px;
+                }
+              }// h4
+
+              //COUNTRY FLAG ICONS - START
+              h4.austria:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-austria-flag.png);
+              }
+              h4.albania:before  {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-albania-flag.png);
+              }
+              h4.australia:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-australia-flag.png);
+              }
+              h4.denmark:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-denmark-flag.png);
+              }
+              h4.egypt:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-egypt-flag.png);
+              }
+              h4.finland:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-finland-flag.png);
+              }
+              h4.france:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-france-flag.png);
+              }
+              h4.germany:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-germany-flag.png);
+              }
+              h4.greece:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-greece-flag.png);
+              }
+              h4.georgia:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-georgia-flag.png);
+              }
+              h4.holland:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-holland-flag.png);
+              }
+              h4.hungary:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-hungary-flag.png);
+              }
+              h4.italy:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-italy-flag.png);
+              }
+              h4.mexico:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-mexico-flag.png);
+              }
+              h4.norway:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-norway-flag.png);
+              }
+              h4.poland:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-poland-flag.png);
+              }
+              h4.portugal:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-portugal-flag.png);
+              }
+              h4.russia:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-russia-flag.png);
+              }
+              h4.south-africa:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-southafrica-flag.png);
+              }
+              h4.spain:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-spain-flag.png);
+              }
+              h4.south-korea:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-southkorea-flag.png);
+              }
+              h4.sweden:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-sweden-flag.png);
+              }
+              h4.turkey:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-turkey-flag.png);
+              }
+              h4.uae:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-uae-flag.png);
+              }
+              h4.uk:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-uk-flag.png);
+              }
+              h4.usa:before {
+                  background: url(../images/uncompressed/flag-icons/milton-bridge-distributor-usa-flag.png);
+              }
+              //COUNTRY FLAG ICONS - END
+
+              > ul {
+                float: none;
+                display: block;
+                > li {
+                  line-height: .8em;
+                  float: none;
+                  width: 100%;
+                  max-width: none;
+                  margin-right: 0;
+                  margin-bottom: .8em;
+                  font-size: 1.2em;
+                  color: #333;
+                  word-break: break-all;
+
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                  i.fa {
+                    color: #2c338c;
+                  }
+                  a {
+                    font-weight: 400;
+                    color: #000000;
+                    &:hover {
+                      color: @miltonRed;
+                      text-decoration: underline;
+                    }
+                  }
+                }// > li
+                li.post-code {
+                  margin-bottom: 1.59em;
+                }
+
+                li.stocked-products {
+                  color: #2c338c;
+                  font-weight: 700;
+                  margin-top: 1.75em;
+                }
+
+                li.contact-number {
+                    margin-top: 1.75em;
+                }
+              }// >ul - address details
+            }
+          }// distributor item
+        }// .field-value  END
+      }// .item-page - END
+
+      @media screen and (min-width: 580px) {
+        .item-page {
+          .field-value {
+
+            h3 {
+              margin-bottom: 1.5em;
+            }
+
+            ul {
+              width: 100%;
+
+              li {
+                float: left;
+                width: 49%;
+                margin-right: 2%;
+                &:nth-child(even) {
+                  margin-right: 0;
+                }
+                > ul {
+                  > li {
+                    margin-bottom: 1em;
+                    &:nth-child(even) {
+                      margin-right: 0;
+                    }
+                  }
+                  li.post-code {
+                    margin-bottom: 2.19em;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }// 580px
+
+      @media screen and (min-width: @bp_mobileMenu) {
+        .item-page {
+          .field-value {
+            h3 {
+              margin-right: 2.2%;
+              padding: 2.405em 2.365em;
+              margin-bottom: 0;
+              max-width: none;
+              margin-top: 0;
+              display: inline-block;
+              vertical-align: top;
+            }
+            ul {
+              width: 74%;
+              li {
+                margin-bottom: 10%;
+              }
+            }
+          }// .field-value
+        }// item-page
+      }// 730px
+
+      @media screen and (min-width: 900px) {
+        .item-page {
+          .fields-container {
+            margin-top: 5.625em;
+          }
+          .field-value {
+            h3 {
+              // width: 12%;
+              margin-right: 2%;
+              padding: 2.405em 2.365em;
+            }
+            ul {
+              width: 80%;
+              li {
+                width: 32%;
+                max-width: 420px;
+                margin-right: 2%;
+                margin-bottom: 5.4%;
+                &:nth-child(even) {
+                  margin-right: 2%;
+                }
+                &:nth-child(3n) {
+                  margin-right: 0;
+                }
+                h4 {
+                  font-size: 1.375em;
+                  span {
+                    margin: 1em 0;
+                  }
+                }
+                > ul {
+                  >li {
+                    font-size: 1.375em;
+                    line-height: 1em;
+
+                    &:nth-child(3n) {
+                      margin-right: 0;
+                    }
+                  }
+                }
+              }// li
+            }// ul
+          }// .field-value
+        }// item-page
+      }// 900px
+
+      @media screen and (min-width: 1200px) {
+        .item-page {
+          .field-value {
+            ul {
+              width: 84%;
+            }
+          }
+        }
+      }// 1200px
+
+      @media screen and (min-width: 1400px) {
+        .item-page {
+          .field-value {
+            h3 {
+              font-size: 2.4em;
+              padding: 1em 1em;
+              margin-right: 2.5%;
+            }
+            ul {
+              width: 88%;
+            }
+          }
+        }
+      }// 1400px
+
+      @media screen and (min-width: 1700px) {
+        .item-page {
+          .field-value {
+            h3 {
+              margin-right: 2em;
+              padding: 1.1725em 1.2em;
+            }
+            ul {
+              width: 85%;
+            }
+          }
+        }
+      }// 1700px
+    }// #main
+  }// #mainwrap
+}// body.distributor
